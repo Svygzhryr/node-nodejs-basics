@@ -1,5 +1,14 @@
+import * as fs from "fs";
+
 const copy = async () => {
-    // Write your code here 
+  fs.cp(
+    "./files",
+    "./files_copy",
+    { errorOnExist: true, recursive: true, force: false },
+    (err) => {
+      if (err) throw "FS operation failed";
+    }
+  );
 };
 
 await copy();
