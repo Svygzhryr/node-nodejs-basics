@@ -22,5 +22,5 @@ const sendResult = () => {
   );
 };
 
-// change workerData here to any number it you checking worker.js only
+// change workerData here to any number it you're testing worker.js only
 recieveValue(workerData);
